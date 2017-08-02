@@ -34,3 +34,13 @@ Closest Events to (4,2):
 Event 003 - $30.29, Distance 3
 Event 001 - $35.20, Distance 5
 Event 006 - $01.40, Distance 12
+
+### My Approach
+
+1. Create a 20x20 grid. The grid will be an array
+2. Generate Random Events at different co-ordinates
+3. User can select a co-ordinate
+4. The program returns a result of closest Events
+
+### Thought Process
+1. Create a 20x20 grid
