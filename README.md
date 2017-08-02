@@ -27,7 +27,7 @@ Secondary requirements are whether your code is idiomatic for the language being
 ### Example Program Run
 
 Please Input Coordinates:
-> 4,2
+4,2
 Closest Events to (4,2):
 Event 003 - $30.29, Distance 3
 Event 001 - $35.20, Distance 5
