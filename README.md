@@ -83,6 +83,32 @@ Event 006 - $01.40, Distance 12
    Event id:42 Ticket price: 14 Distance: 4
    ```
 ### Thought Process
-1. Create a 20x20 grid, which will be an array of size 20x20
-- Installed testing dependencies
-2.
+1. Before creating the grid, tickets and event classes were created to be inserted into the grid
+2. Create a Ticket class which initializes with a price
+3. Create an Event class that initializes with id, location and tickets 
+4. The Event class generates a random amount of tickets per location
+5. Calculates the distance to a location ie the Manhattan Distance
+6. Finds the cheapest ticket at the event
+7. Create a grid class that generates a grid of 20x20 with a maximum number of 20 events
+8. The five closest events are sorted as they are placed in an array
+9. A method is used to print out the cheapest closest tickets to the console.
+
+### Assumptions Made
+
+1. The Manhattan distance from a point (a,b) to point (c, d) is equal to |a-c| + |b-d|
+2. The range of ticket prices will vary from 1-30 units of currency
+3. A total of 50 random events can be generated at the time of running this program
+
+### How might you change your program if you needed to support multiple events at the same location?
+
+To add multiple events at the same location I simply need to modify the while loop in the Grid class, which checks to see if events already exist at a particular co-ordinate.
+
+### How would you change your program if you were working with a much larger world size?
+
+If I were working with much larger world size I would choose to write the events, tickets and co-ordinates to a database which would make it easier to Create, Read, Update or Delete data pertaining to the events.
+I would also look into using a Nearest Neighbour Search or a k-d tree which would decrease the processing time used to access the data.
+
+References:
+https://en.wikipedia.org/wiki/Nearest_neighbor_search#Nearest_neighbor_search_in_spaces_with_small_intrinsic_dimension
+https://en.wikipedia.org/wiki/K-d_tree
+https://stackoverflow.com/questions/2486093/millions-of-3d-points-how-to-find-the-10-of-them-closest-to-a-given-point
