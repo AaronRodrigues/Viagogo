@@ -109,6 +109,6 @@ If I were working with much larger world size I would choose to write the events
 I would also look into using a Nearest Neighbour Search or a k-d tree which would decrease the processing time used to access the data.
 
 References:
-https://en.wikipedia.org/wiki/Nearest_neighbor_search#Nearest_neighbor_search_in_spaces_with_small_intrinsic_dimension
-https://en.wikipedia.org/wiki/K-d_tree
-https://stackoverflow.com/questions/2486093/millions-of-3d-points-how-to-find-the-10-of-them-closest-to-a-given-point
+1. https://en.wikipedia.org/wiki/Nearest_neighbor_search#Nearest_neighbor_search_in_spaces_with_small_intrinsic_dimension
+2. https://en.wikipedia.org/wiki/K-d_tree
+3. https://stackoverflow.com/questions/2486093/millions-of-3d-points-how-to-find-the-10-of-them-closest-to-a-given-point
