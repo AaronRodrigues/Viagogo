@@ -6,6 +6,9 @@ describe Event do
 	describe 'initializes an event' do
 		it 'exists' do
 			expect(event).to be_truthy
-		end		
+		end
+		it 'calculates the Manhattan Distance between two points' do
+			expect(event.distance_to([0,0])).to eq 3
+		end
 	end
 end
