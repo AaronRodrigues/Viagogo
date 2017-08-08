@@ -82,6 +82,13 @@ Event 006 - $01.40, Distance 12
    Event id:47 Ticket price: 6 Distance: 4
    Event id:42 Ticket price: 14 Distance: 4
    ```
+
+### Tests
+   To run the tests, navigate to the project folder and type 
+   ```
+   rspec
+   ````
+   
 ### Thought Process
 1. Before creating the grid, tickets and event classes were created to be inserted into the grid
 2. Create a Ticket class which initializes with a price
