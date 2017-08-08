@@ -47,16 +47,18 @@ Event 006 - $01.40, Distance 12
 1. Install RailsInstaller for Windows version 2.3.3  from 
    http://railsinstaller.org/en
 2. Open Git Bash
-3. To install dependencies type
-   ```
-   bundle install
-   ```
-   This will install the testing framework and added dependencies
-4. Check that installed version of Ruby is ruby v2.3.3
+3. Check that installed version of Ruby is ruby v2.3.3
    ```
    ruby -v
    ```
-
+4. Clone this repository
+   ```
+   git clone git@github.com:AaronRodrigues/Viagogo.git
+   ```
+5. To install dependencies type
+   ```
+   bundle install
+   ```
 ### Run the Program
 
 1. Open Git Bash
@@ -88,7 +90,7 @@ Event 006 - $01.40, Distance 12
    ```
    rspec
    ````
-   
+
 ### Thought Process
 1. Before creating the grid, tickets and event classes were created to be inserted into the grid
 2. Create a Ticket class which initializes with a price
