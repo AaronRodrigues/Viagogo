@@ -1,4 +1,4 @@
-require_relative '../ticket'
+require_relative '../lib/ticket'
 
 describe Ticket do	
 	let(:ticket) { Ticket.new(10) }
