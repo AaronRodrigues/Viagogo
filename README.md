@@ -42,5 +42,23 @@ Event 006 - $01.40, Distance 12
 3. User can select a co-ordinate
 4. The program returns a result of closest Events
 
+### Installation for Windows
+
+1. Install Git Bash
+2. Install chocolatey In cmd, Type in
+```
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+```
+3. In git bash type
+```
+choco install ruby
+choco update ruby
+```
+4. Check that installed version of Ruby is ruby v2.4.1.2
+
 ### Thought Process
-1. Create a 20x20 grid
+1. Create a 20x20 grid, which will be an array of size 20x20
+- Installed testing dependencies
+ RSpec
+ Rubocop
+ simple-cov for test coverage
