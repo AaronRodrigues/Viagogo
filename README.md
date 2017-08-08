@@ -44,21 +44,45 @@ Event 006 - $01.40, Distance 12
 
 ### Installation for Windows
 
-1. Install Git Bash
-2. Install chocolatey In cmd, Type in
-```
-@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-```
-3. In git bash type
-```
-choco install ruby
-choco update ruby
-```
-4. Check that installed version of Ruby is ruby v2.4.1.2
+1. Install RailsInstaller for Windows version 2.3.3  from 
+   http://railsinstaller.org/en
+2. Open Git Bash
+3. To install dependencies type
+   ```
+   bundle install
+   ```
+   This will install the testing framework and added dependencies
+4. Check that installed version of Ruby is ruby v2.3.3
+   ```
+   ruby -v
+   ```
 
+### Run the Program
+
+1. Open Git Bash
+2. Type 
+   ```
+   irb
+   ```
+   This opens the interactive ruby shell
+3. Type
+   ```
+   require './lib/grid'
+   ```
+4. You can now input your co-ordinates as follows
+   ```
+   Please Input Coordinates:
+   1,2
+   ```
+   This will return the closest events
+   ```
+   Event id:5 Ticket price: 2 Distance: 2
+   Event id:23 Ticket price: 2 Distance: 3
+   Event id:9 Ticket price: 3 Distance: 3
+   Event id:47 Ticket price: 6 Distance: 4
+   Event id:42 Ticket price: 14 Distance: 4
+   ```
 ### Thought Process
 1. Create a 20x20 grid, which will be an array of size 20x20
 - Installed testing dependencies
- RSpec
- Rubocop
- simple-cov for test coverage
+2.
