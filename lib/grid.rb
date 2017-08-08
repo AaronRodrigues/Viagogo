@@ -1,4 +1,5 @@
 class Grid
+  
   def initialize(events)
     @events = events
   end
@@ -21,5 +22,8 @@ class Grid
     end
     nil
   end
-  
+
 end
+
+grid = Grid.generate()
+input = grid.query()
